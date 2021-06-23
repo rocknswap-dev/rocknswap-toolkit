@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Profile } from "../types";
-import NoProfileAvatar from "../../../components/Svg/Icons/NoProfileAvatar";
 
 interface AvatarProps {
   profile: Profile;
@@ -33,11 +32,7 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
   const link = profile.username ? profileLink : noProfileLink;
   const isExternal = link.startsWith("http");
   const ariaLabel = "Link to profile";
-  const icon = image ? (
-    <img src={image} alt="profile avatar" height="32px" width="32px" />
-  ) : (
-    <NoProfileAvatar width="32px" height="32px" />
-  );
+  const icon = image ? <img src={image} alt="profile avatar" height="32px" width="32px" /> : <></>;
 
   if (isExternal) {
     return (
