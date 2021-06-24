@@ -1,6 +1,6 @@
 {
   "name": "@rocknswap/uikit",
-  "version": "0.39.3",
+  "version": "0.1.0",
   "description": "Set of UI components for rocknswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -19,7 +19,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test": "jest",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "release": "yarn build && np"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -63,6 +64,7 @@
     "@testing-library/react": "^11.2.5",
     "@types/react-dom": "^17.0.5",
     "jest-styled-components": "^7.0.3",
+    "np": "^7.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
