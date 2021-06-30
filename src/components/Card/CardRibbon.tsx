@@ -20,10 +20,13 @@ const StyledCardRibbon = styled.div<Partial<StyledCardRibbonProps>>`
   transform: translateX(30%) translateY(0%) rotate(45deg);
   transform: ${({ ribbonPosition }) =>
     ribbonPosition === "right"
-      ? "translateX(30%) translateY(0%) rotate(45deg)"
-      : "translateX(0%) translateY(200%) rotate(-45deg)"};
+      ? "translateX(45%) translateY(-45%) rotate(45deg)"
+      : "translateX(-15%) translateY(250%) rotate(-45deg)"};
   transform-origin: top left;
   width: 96px;
+  font-size: ${({ ribbonPosition }) => (ribbonPosition === "right" ? "13px" : "11px")};
+  text-transform: capitalize;
+  padding: ${({ ribbonPosition }) => (ribbonPosition === "right" ? "8px" : "5px")} 0px;
 
   &:before,
   &:after {
