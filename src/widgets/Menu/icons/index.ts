@@ -1,3 +1,4 @@
+export { default as BushIcon } from "./Bush";
 export { default as FarmIcon } from "./Farm";
 export { default as GroupsIcon } from "./Groups";
 export { default as HamburgerIcon } from "./Hamburger";
