@@ -15,13 +15,13 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      background-color: #EFF4F5;
+      background-color: #424242;
       border-radius: 16px;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
-      border: 1px solid #E9EAEB;
+      border: 1px solid rgba(255,255,255,0.3);
     }
 
     .c0 > button + button,
@@ -60,7 +60,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: #1FC7D4;
+      background-color: #F5B843;
       color: white;
     }
 
@@ -78,10 +78,10 @@ it("renders correctly", () => {
 
     .c1:disabled,
     .c1.pancake-button--disabled {
-      background-color: #E9EAEB;
-      border-color: #E9EAEB;
+      background-color: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.12);
       box-shadow: none;
-      color: #BDC2C4;
+      color: rgba(255,255,255,0.5);
       cursor: not-allowed;
     }
 
@@ -116,9 +116,9 @@ it("renders correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: #EFF4F5;
+      background-color: #424242;
       box-shadow: none;
-      color: #1FC7D4;
+      color: #F5B843;
     }
 
     .c2:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
@@ -135,16 +135,16 @@ it("renders correctly", () => {
 
     .c2:disabled,
     .c2.pancake-button--disabled {
-      background-color: #E9EAEB;
-      border-color: #E9EAEB;
+      background-color: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.12);
       box-shadow: none;
-      color: #BDC2C4;
+      color: rgba(255,255,255,0.5);
       cursor: not-allowed;
     }
 
     .c3 {
       background-color: transparent;
-      color: #7A6EAA;
+      color: #f7c668;
     }
 
     .c3:hover:not(:disabled):not(:active) {

@@ -36,8 +36,8 @@ it("renders correctly", () => {
     }
 
     .c0 .pancake:nth-child(1) {
-      background: #FFFFFF;
-      box-shadow: 0 2px 0 2px #BDC2C4;
+      background: #222222;
+      box-shadow: 0 2px 0 2px rgba(255,255,255,0.5);
     }
 
     .c0 .pancake:nth-child(2) {
@@ -105,7 +105,7 @@ it("renders correctly", () => {
     }
 
     .c1:focus + label {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #ab802e,0px 0px 0px 4px rgba(245,184,67,0.6);
     }
 
     .c1:checked + label .pancakes {
@@ -148,7 +148,7 @@ it("renders correctly", () => {
     .c2 {
       width: 72px;
       height: 40px;
-      background: #31D0AA;
+      background: #4caf50;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       display: inline-block;
       border-radius: 50px;
@@ -231,8 +231,8 @@ it("renders correctly scale sm", () => {
     }
 
     .c0 .pancake:nth-child(1) {
-      background: #FFFFFF;
-      box-shadow: 0 1px 0 1px #BDC2C4;
+      background: #222222;
+      box-shadow: 0 1px 0 1px rgba(255,255,255,0.5);
     }
 
     .c0 .pancake:nth-child(2) {
@@ -300,7 +300,7 @@ it("renders correctly scale sm", () => {
     }
 
     .c1:focus + label {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #ab802e,0px 0px 0px 4px rgba(245,184,67,0.6);
     }
 
     .c1:checked + label .pancakes {
@@ -343,7 +343,7 @@ it("renders correctly scale sm", () => {
     .c2 {
       width: 36px;
       height: 20px;
-      background: #31D0AA;
+      background: #4caf50;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       display: inline-block;
       border-radius: 50px;

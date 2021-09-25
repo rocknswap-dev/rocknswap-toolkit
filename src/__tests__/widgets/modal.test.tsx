@@ -12,7 +12,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c5 {
-      color: #280D5F;
+      color: #fff;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
@@ -43,7 +43,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #1FC7D4;
+      fill: #F5B843;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -81,7 +81,7 @@ it("renders correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #F5B843;
       box-shadow: none;
     }
 
@@ -99,10 +99,10 @@ it("renders correctly", () => {
 
     .c7:disabled,
     .c7.pancake-button--disabled {
-      background-color: #E9EAEB;
-      border-color: #E9EAEB;
+      background-color: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.12);
       box-shadow: none;
-      color: #BDC2C4;
+      color: rgba(255,255,255,0.5);
       cursor: not-allowed;
     }
 
@@ -117,7 +117,7 @@ it("renders correctly", () => {
       -ms-flex-align: center;
       align-items: center;
       background: transparent;
-      border-bottom: 1px solid #E7E3EB;
+      border-bottom: 1px solid #383241;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -145,9 +145,9 @@ it("renders correctly", () => {
 
     .c1 {
       overflow: hidden;
-      background: #FFFFFF;
+      background: #222222;
       box-shadow: 0px 20px 36px -8px rgba(14,14,44,0.1),0px 1px 1px rgba(0,0,0,0.05);
-      border: 1px solid #E7E3EB;
+      border: 1px solid #383241;
       border-radius: 32px;
       width: 100%;
       max-height: 100vh;
