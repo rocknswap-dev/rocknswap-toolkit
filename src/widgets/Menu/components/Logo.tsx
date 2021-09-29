@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../../components/Svg";
+import { LogoIcon, RockNSwapIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { Text } from "../../../components/Text";
 import { HamburgerIcon, HamburgerCloseIcon } from "../icons";
@@ -23,16 +23,24 @@ const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 32px;
+    width: 55px;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
   }
   .desktop-icon {
-    width: 160px;
+    width: 200px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .name {
+      width: 150px;
     }
   }
   .right-eye {
@@ -54,9 +62,10 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <Text fontSize="24px" bold color="primary">
-        Rock 'N' Swap
-      </Text>
+      <div className="desktop-icon">
+        <LogoIcon className="icon" />
+        <RockNSwapIcon className="name" />
+      </div>
     </>
   );
 

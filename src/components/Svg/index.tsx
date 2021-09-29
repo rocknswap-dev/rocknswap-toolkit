@@ -53,6 +53,7 @@ export { default as PlayCircleOutlineIcon } from "./Icons/PlayCircleOutline";
 export { default as PrizeIcon } from "./Icons/Prize";
 export { default as ProposalIcon } from "./Icons/Proposal";
 export { default as RemoveIcon } from "./Icons/Remove";
+export { default as RockNSwapIcon } from "./Icons/RockNSwap";
 export { default as VerifiedIcon } from "./Icons/Verified";
 export { default as ProgressBunny } from "./Icons/ProgressBunny";
 export { default as WaitIcon } from "./Icons/Wait";
